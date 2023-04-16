@@ -88,7 +88,7 @@ p {
   width: 188px;
   height: 75px;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 25px;
   background-image: url(./sign-up.svg);
   cursor: pointer;
   background-color: white;
@@ -275,4 +275,98 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   color: #777777;
+}
+
+.fourth-section {
+  margin-top: 100px;
+}
+
+.fourth-section-wrapper {
+  display: flex;
+}
+
+.fourth-section-left {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fourth-section-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 56px;
+  color: #111111;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.straight-line {
+  width: 100%;
+  display: flex;
+  margin-bottom: 85px;
+}
+
+.main-footer-wrapper {
+  display: flex;
+}
+
+.footer-social-media {
+  display: flex;
+}
+
+.social {
+  margin-right: 15px;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.side-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #999999;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #555555;
+}
+
+.footer-right a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.footer-right ul li {
+  margin-bottom: 28px;
+  margin-left: 70px;
 }
