@@ -21,42 +21,40 @@ body {
   margin-right: auto;
 }
 
-header {
-  & .main-header {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 70px;
-    & .main-header-wrapper {
-      display: flex;
-      justify-content: space-between;
-      & .header-logo {
-        color: $color-white;
-      }
-      & .burger {
-        display: none;
-        margin-top: 10px;
-        width: 24px;
-        height: 22px;
-        background: transparent;
-        background-image: url(./burger-logo.svg);
-        border: 0;
-      }
-      & .header-navigation a {
-        text-decoration: none;
-        list-style-type: none;
-        color: $color-white;
-        font-weight: 400;
-        font-size: 20px;
-        font-family: Inter;
-      }
-      & .navpink a {
-        color: #ff3998;
-      }
-      & .header-navigation ul li {
-        list-style-type: none;
-        display: inline-block;
-        padding-left: 28px;
-      }
+.main-header {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 70px;
+  & .main-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    & .header-logo {
+      color: $color-white;
+    }
+    & .burger {
+      display: none;
+      margin-top: 10px;
+      width: 24px;
+      height: 22px;
+      background: transparent;
+      background-image: url(./burger-logo.svg);
+      border: 0;
+    }
+    & .header-navigation a {
+      text-decoration: none;
+      list-style-type: none;
+      color: $color-white;
+      font-weight: 400;
+      font-size: 20px;
+      font-family: Inter;
+    }
+    & .navpink a {
+      color: #ff3998;
+    }
+    & .header-navigation ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding-left: 28px;
     }
   }
 }
