@@ -1,6 +1,16 @@
+@use 'color';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: color.$color-black;
+  color: color.$color-white;
 }
 
 .main-content {
@@ -19,13 +29,13 @@ body {
         font-size: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: $color-pink;
+        color: color.$color-pink;;
       }
       & h1 {
         font-family: "Inter";
         font-weight: 900;
         font-size: 96px;
-        color: $color-white;
+        color: color.$color-white;
         margin-top: 24px;
         margin-bottom: 32px;
       }
@@ -34,7 +44,7 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: $color-white;
+        color: color.$color-white;
         margin-bottom: 41px;
       }
       & .button {
@@ -45,7 +55,7 @@ body {
         padding-top: 25px;
         background-image: url(./sign-up.svg);
         cursor: pointer;
-        background-color: $color-black;
+        background-color: color.$color-black;
         font-size: 20px;
         font-weight: 600;
       }
@@ -56,7 +66,7 @@ body {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
-        color: $color-white;
+        color: color.$color-white;
       }
       & .first-section-right {
         width: 50%;
@@ -106,7 +116,7 @@ body {
         font-family: "Inter";
         font-weight: 500;
         font-size: 40px;
-        color: $color-black;
+        color: color.$color-black;
         margin-bottom: 10px;
       }
     }
@@ -115,7 +125,7 @@ body {
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
-      color: #111111;
+      color: color.$color-black;
     }
     & .second-section-right {
       display: flex;
@@ -130,7 +140,7 @@ body {
       font-size: 40px;
     }
     & p {
-      color: $color-gray;
+      color: color.$color-gray;
       font-family: "Inter";
       font-weight: 400;
       font-size: 20px;
@@ -143,7 +153,7 @@ body {
       margin-top: 50px;
       gap: 40px;
       & .card {
-        background-color: $color-black;
+        background-color: color.$color-black;
         width: calc(100% / 4);
         border-radius: 16px;
       }
@@ -174,14 +184,14 @@ body {
       font-weight: 500;
       font-size: 12px;
       text-transform: uppercase;
-      color: rgb(253, 150, 102);
+      color: color.$color-red;
       margin-bottom: 8px;
     }
     & .bold-text {
       font-family: "Inter";
       font-weight: 500;
       font-size: 19px;
-      color: $color-white;
+      color: color.$color-white;
       margin-bottom: 8px;
     }
     & .bold-text img {
@@ -192,14 +202,14 @@ body {
       font-weight: 500;
       font-size: 12px;
       text-transform: uppercase;
-      color: #777777;
+      color: color.$color-gray;
       margin-bottom: 8px;
     }
     & .gray-text {
       font-family: "Inter";
       font-weight: 400;
       font-size: 18px;
-      color: #777777;
+      color: color.$color-gray;
     }
   }
   & .fourth-section {
@@ -216,7 +226,7 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: $color-white;
+        color: color.$color-white;
         margin-bottom: 41px;
       }
       & .button {
@@ -227,7 +237,7 @@ body {
         padding-top: 25px;
         background-image: url(./sign-up.svg);
         cursor: pointer;
-        background-color: $color-black;
+        background-color: color.$color-black;
         font-size: 20px;
         font-weight: 600;
       }
@@ -237,7 +247,7 @@ body {
         font-size: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: $color-pink;
+        color: color.$color-pink;
       }
     }
     & .fourth-section-right {
@@ -249,7 +259,7 @@ body {
       font-family: "Inter";
       font-weight: 900;
       font-size: 56px;
-      color: $color-white;
+      color: color.$color-white;
       margin-top: 15px;
       margin-bottom: 15px;
     }

@@ -1,18 +1,9 @@
-@use "header";
-@use "container";
-@use "main-content";
-@use "footer";
+@use 'header';
+@use 'container';
+@use 'main-content';
+@use 'footer';
+@use 'color';
 
-$color-red: rgb(253, 150, 102);
-$color-pink: #ff3998;
-$color-white: rgb(255, 255, 255);
-$color-black: #111111;
-$color-gray: #777777;
-$color-lightgray: #999999;
-$color-dark: #555555;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
+

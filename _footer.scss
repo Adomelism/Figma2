@@ -1,3 +1,5 @@
+@use 'color';
+
 .main-footer {
   & .main-footer-wrapper {
     display: flex;
@@ -21,11 +23,11 @@
     font-family: "Inter";
     font-weight: 400;
     font-size: 20px;
-    color: $color-white;
+    color: color.$color-white;
   }
   & .footer-right a {
     text-decoration: none;
-    color: $color-white;
+    color: color.$color-white;
   }
   & .title {
     font-family: "Inter";
@@ -33,7 +35,7 @@
     font-size: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: $color-white;
+    color: color.$color-white;
   }
   & .footer-right ul li {
     margin-bottom: 28px;
@@ -47,6 +49,6 @@
     font-family: "Inter";
     font-weight: 400;
     font-size: 20px;
-    color: $color-gray;
+    color: color.$color-gray;
   }
 }
