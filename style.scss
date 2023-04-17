@@ -1,3 +1,7 @@
+@use "header";
+@use "container";
+@use "footer";
+
 $color-red: rgb(253, 150, 102);
 $color-pink: #ff3998;
 $color-white: rgb(255, 255, 255);
@@ -13,50 +17,6 @@ $color-dark: #555555;
 body {
   background-color: $color-black;
   color: $color-white;
-}
-
-.container {
-  max-width: 1270px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-header {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 70px;
-  & .main-header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    & .header-logo {
-      color: $color-white;
-    }
-    & .burger {
-      display: none;
-      margin-top: 10px;
-      width: 24px;
-      height: 22px;
-      background: transparent;
-      background-image: url(./burger-logo.svg);
-      border: 0;
-    }
-    & .header-navigation a {
-      text-decoration: none;
-      list-style-type: none;
-      color: $color-white;
-      font-weight: 400;
-      font-size: 20px;
-      font-family: Inter;
-    }
-    & .navpink a {
-      color: #ff3998;
-    }
-    & .header-navigation ul li {
-      list-style-type: none;
-      display: inline-block;
-      padding-left: 28px;
-    }
-  }
 }
 
 .main-content {
@@ -314,58 +274,5 @@ body {
       display: flex;
       margin-bottom: 85px;
     }
-  }
-}
-
-.main-footer {
-  & .main-footer-wrapper {
-    display: flex;
-  }
-  & .footer-social-media {
-    display: flex;
-  }
-  & .social {
-    margin-right: 15px;
-  }
-  & .footer-left {
-    width: 50%;
-  }
-  & .footer-right {
-    width: 50%;
-    display: flex;
-    justify-content: right;
-  }
-  & .footer-right ul {
-    list-style-type: none;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 20px;
-    color: $color-white;
-  }
-  & .footer-right a {
-    text-decoration: none;
-    color: $color-white;
-  }
-  & .title {
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $color-white;
-  }
-  & .footer-right ul li {
-    margin-bottom: 28px;
-    margin-left: 70px;
-  }
-  & .side-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 20px;
-    color: $color-gray;
   }
 }

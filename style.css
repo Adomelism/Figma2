@@ -15,19 +15,19 @@ body {
   margin-right: auto;
 }
 
-header .main-header {
+.main-header {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 70px;
 }
-header .main-header .main-header-wrapper {
+.main-header .main-header-wrapper {
   display: flex;
   justify-content: space-between;
 }
-header .main-header .main-header-wrapper .header-logo {
+.main-header .main-header-wrapper .header-logo {
   color: rgb(255, 255, 255);
 }
-header .main-header .main-header-wrapper .burger {
+.main-header .main-header-wrapper .burger {
   display: none;
   margin-top: 10px;
   width: 24px;
@@ -36,7 +36,7 @@ header .main-header .main-header-wrapper .burger {
   background-image: url(./burger-logo.svg);
   border: 0;
 }
-header .main-header .main-header-wrapper .header-navigation a {
+.main-header .main-header-wrapper .header-navigation a {
   text-decoration: none;
   list-style-type: none;
   color: rgb(255, 255, 255);
@@ -44,10 +44,10 @@ header .main-header .main-header-wrapper .header-navigation a {
   font-size: 20px;
   font-family: Inter;
 }
-header .main-header .main-header-wrapper .navpink a {
+.main-header .main-header-wrapper .navpink a {
   color: #ff3998;
 }
-header .main-header .main-header-wrapper .header-navigation ul li {
+.main-header .main-header-wrapper .header-navigation ul li {
   list-style-type: none;
   display: inline-block;
   padding-left: 28px;
