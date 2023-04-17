@@ -4,19 +4,30 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #111111;
+  color: rgb(255, 255, 255);
+}
+
 .container {
   max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
 }
 
-header {
+header .main-header {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 70px;
 }
-
-.burger {
+header .main-header .main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header .main-header .main-header-wrapper .header-logo {
+  color: rgb(255, 255, 255);
+}
+header .main-header .main-header-wrapper .burger {
   display: none;
   margin-top: 10px;
   width: 24px;
@@ -25,37 +36,35 @@ header {
   background-image: url(./burger-logo.svg);
   border: 0;
 }
-
-.header-navigation a {
+header .main-header .main-header-wrapper .header-navigation a {
   text-decoration: none;
   list-style-type: none;
-  color: #555555;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: 20px;
   font-family: Inter;
 }
-
-.navpink a {
+header .main-header .main-header-wrapper .navpink a {
   color: #ff3998;
 }
-
-.header-navigation ul li {
+header .main-header .main-header-wrapper .header-navigation ul li {
   list-style-type: none;
   display: inline-block;
   padding-left: 28px;
 }
 
-.main-header-wrapper {
+.main-content .first-section {
+  width: 100%;
+}
+.main-content .first-section .first-section-wrapper {
   display: flex;
-  justify-content: space-between;
+  margin-top: 150px;
+  gap: 60px;
 }
-
-.main-content {
-  margin-left: 80px;
-  margin-right: 80px;
+.main-content .first-section .first-section-wrapper .first-section-left {
+  width: 50%;
 }
-
-.status {
+.main-content .first-section .first-section-wrapper .status {
   font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
@@ -63,27 +72,23 @@ header {
   text-transform: uppercase;
   color: #ff3998;
 }
-
-h1 {
+.main-content .first-section .first-section-wrapper h1 {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 900;
   font-size: 96px;
-  color: #111111;
+  color: rgb(255, 255, 255);
   margin-top: 24px;
   margin-bottom: 32px;
 }
-
-p {
+.main-content .first-section .first-section-wrapper p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  color: #555555;
+  color: rgb(255, 255, 255);
   margin-bottom: 41px;
 }
-
-.button {
+.main-content .first-section .first-section-wrapper .button {
   border-radius: 100px;
   width: 188px;
   height: 75px;
@@ -91,42 +96,26 @@ p {
   padding-top: 25px;
   background-image: url(./sign-up.svg);
   cursor: pointer;
-  background-color: white;
+  background-color: #111111;
   font-size: 20px;
   font-weight: 600;
 }
-
-.first-section-left a {
+.main-content .first-section .first-section-wrapper .first-section-left a {
   text-decoration: none;
   list-style-type: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  color: #111111;
+  color: rgb(255, 255, 255);
 }
-
-.first-section-right img {
-  width: 354px;
-  height: 519px;
-}
-
-.first-section {
-  width: 100%;
-}
-
-.first-section-left {
-  width: 50%;
-}
-
-.first-section-right {
+.main-content .first-section .first-section-wrapper .first-section-right {
   width: 50%;
   display: flex;
   justify-content: center;
   position: relative;
 }
-
-.first-section-right::before {
+.main-content .first-section .first-section-wrapper .first-section-right::before {
   content: "";
   position: absolute;
   background-image: url(./nft-logo-before.svg);
@@ -137,8 +126,7 @@ p {
   top: -20%;
   z-index: -10;
 }
-
-.first-section-right::after {
+.main-content .first-section .first-section-wrapper .first-section-right::after {
   content: "";
   position: absolute;
   background-image: url(./nft-logo-after.svg);
@@ -149,19 +137,11 @@ p {
   top: 30%;
   z-index: -10;
 }
-
-.first-section-wrapper {
-  display: flex;
-  margin-top: 150px;
-  gap: 60px;
-}
-
-.second-section-wrapper {
+.main-content .second-section-wrapper {
   display: flex;
   flex-direction: column;
 }
-
-.second-section-left {
+.main-content .second-section-wrapper .second-section-left {
   background-image: url(./second-section-background.svg);
   width: 100%;
   height: 320px;
@@ -173,65 +153,65 @@ p {
   padding-left: 64px;
   padding-top: 100px;
 }
-
-h2 {
+.main-content .second-section-wrapper .second-section-left h2 {
   font-family: "Inter";
   font-weight: 500;
   font-size: 40px;
   color: #111111;
   margin-bottom: 10px;
 }
-
-.second-section-p {
+.main-content .second-section-wrapper .second-section-p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-
-.second-section-right {
+.main-content .second-section-wrapper .second-section-right {
   display: flex;
   justify-content: space-evenly;
 }
-
-.third-section {
+.main-content .third-section {
   margin-top: 100px;
 }
-
-.underlined {
+.main-content .third-section h2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 40px;
+}
+.main-content .third-section p {
+  color: #777777;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+}
+.main-content .third-section .underlined {
   text-decoration: underline;
 }
-
-.third-section-right {
+.main-content .third-section .third-section-right {
   display: flex;
   margin-top: 50px;
   gap: 40px;
 }
-
-.card {
-  background-color: #eeeeee;
-  width: calc(100% / 4);
+.main-content .third-section .third-section-right .card {
+  background-color: #111111;
+  width: 25%;
   border-radius: 16px;
 }
-
-.card-logo img {
+.main-content .third-section .third-section-right .card-logo img {
   width: 100%;
 }
-
-.card-content {
+.main-content .third-section .third-section-right .card-content {
   display: flex;
   justify-content: space-between;
 }
-
-.card-content-left {
+.main-content .third-section .third-section-right .card-content-left {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
   padding-top: 15px;
 }
-
-.card-content-right {
+.main-content .third-section .third-section-right .card-content-right {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
@@ -239,8 +219,7 @@ h2 {
   padding-bottom: 15px;
   text-align: right;
 }
-
-.red-text {
+.main-content .third-section .red-text {
   font-family: "Inter";
   font-weight: 500;
   font-size: 12px;
@@ -248,20 +227,17 @@ h2 {
   color: rgb(253, 150, 102);
   margin-bottom: 8px;
 }
-
-.bold-text {
+.main-content .third-section .bold-text {
   font-family: "Inter";
   font-weight: 500;
   font-size: 19px;
-  color: #111111;
+  color: rgb(255, 255, 255);
   margin-bottom: 8px;
 }
-
-.bold-text img {
+.main-content .third-section .bold-text img {
   margin-right: 8px;
 }
-
-.gray-uppercase-text {
+.main-content .third-section .gray-uppercase-text {
   font-family: "Inter";
   font-weight: 500;
   font-size: 12px;
@@ -269,72 +245,111 @@ h2 {
   color: #777777;
   margin-bottom: 8px;
 }
-
-.gray-text {
+.main-content .third-section .gray-text {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   color: #777777;
 }
-
-.fourth-section {
+.main-content .fourth-section {
   margin-top: 100px;
 }
-
-.fourth-section-wrapper {
+.main-content .fourth-section .fourth-section-wrapper {
   display: flex;
 }
-
-.fourth-section-left {
+.main-content .fourth-section .fourth-section-left {
   width: 50%;
   margin-top: auto;
   margin-bottom: auto;
 }
-
-.fourth-section-right {
+.main-content .fourth-section .fourth-section-left p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 41px;
+}
+.main-content .fourth-section .fourth-section-left .button {
+  border-radius: 100px;
+  width: 188px;
+  height: 75px;
+  text-align: center;
+  padding-top: 25px;
+  background-image: url(./sign-up.svg);
+  cursor: pointer;
+  background-color: #111111;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-content .fourth-section .fourth-section-left .status {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+.main-content .fourth-section .fourth-section-right {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-
-h3 {
+.main-content .fourth-section h3 {
   font-family: "Inter";
   font-weight: 900;
   font-size: 56px;
-  color: #111111;
+  color: rgb(255, 255, 255);
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
-.straight-line {
+.main-content .fourth-section .straight-line {
   width: 100%;
   display: flex;
   margin-bottom: 85px;
 }
 
-.main-footer-wrapper {
+.main-footer .main-footer-wrapper {
   display: flex;
 }
-
-.footer-social-media {
+.main-footer .footer-social-media {
   display: flex;
 }
-
-.social {
+.main-footer .social {
   margin-right: 15px;
 }
-
-.footer-left {
+.main-footer .footer-left {
   width: 50%;
 }
-
-.footer-right {
+.main-footer .footer-right {
   width: 50%;
   display: flex;
   justify-content: right;
 }
-
-.side-footer {
+.main-footer .footer-right ul {
+  list-style-type: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.main-footer .footer-right a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.main-footer .title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.main-footer .footer-right ul li {
+  margin-bottom: 28px;
+  margin-left: 70px;
+}
+.main-footer .side-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
@@ -342,31 +357,5 @@ h3 {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  color: #999999;
-}
-
-.footer-right ul {
-  list-style-type: none;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  color: #555555;
-}
-
-.footer-right a {
-  text-decoration: none;
-}
-
-.title {
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #555555;
-}
-
-.footer-right ul li {
-  margin-bottom: 28px;
-  margin-left: 70px;
-}
+  color: #777777;
+}/*# sourceMappingURL=style.css.map */
