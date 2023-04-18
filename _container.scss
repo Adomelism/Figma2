@@ -1,4 +1,4 @@
-@use 'responsive';
+@use "responsive";
 
 .container {
   max-width: 1270px;
@@ -6,18 +6,18 @@
   margin-right: auto;
 
   @include responsive.xxlg {
-      width: 50%;
+    width: 50%;
   }
   @include responsive.xlg {
-      width: 70%;
+    width: 70%;
   }
   @include responsive.lg {
-      width: 80%;
+    width: 80%;
   }
   @include responsive.md {
-      width: 90%;
+    width: 90%;
   }
-@include responsive.sm {
+  @include responsive.sm {
     width: 100%;
-}
+  }
 }

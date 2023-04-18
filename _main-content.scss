@@ -1,14 +1,11 @@
-@use 'color';
-@use 'responsive';
-
-
+@use "color";
+@use "responsive";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 
 body {
   background-color: color.$color-black;
@@ -22,8 +19,14 @@ body {
       display: flex;
       margin-top: 150px;
       gap: 60px;
+      @include responsive.lg {
+        margin-top: 60px;
+      }
       & .first-section-left {
         width: 50%;
+        @include responsive.lg {
+          width: 80%;
+        }
       }
       & .status {
         font-family: "Inter";
@@ -31,7 +34,7 @@ body {
         font-size: 16px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: color.$color-pink;;
+        color: color.$color-pink;
       }
       & h1 {
         font-family: "Inter";
@@ -40,6 +43,9 @@ body {
         color: color.$color-white;
         margin-top: 24px;
         margin-bottom: 32px;
+        @include responsive.lg {
+          font-size: 35px;
+        }
       }
       & p {
         font-family: "Inter";
@@ -48,6 +54,9 @@ body {
         font-size: 20px;
         color: color.$color-white;
         margin-bottom: 41px;
+        @include responsive.lg {
+          font-size: 14px;
+        }
       }
       & .button {
         border-radius: 100px;
@@ -74,37 +83,27 @@ body {
         width: 50%;
         display: flex;
         justify-content: center;
-        position: relative;
+        @include responsive.lg {
+          width: 20%;
+        }
       }
-      & .first-section-right::before {
-        content: "";
-        position: absolute;
-        background-image: url(./nft-logo-before.svg);
-        background-size: 800px 800px;
-        width: 800px;
-        height: 800px;
-        right: -30%;
-        top: -20%;
-        z-index: -10;
-      }
-      & .first-section-right::after {
-        content: "";
-        position: absolute;
-        background-image: url(./nft-logo-after.svg);
-        background-size: 500px 500px;
-        width: 500px;
-        height: 500px;
-        right: 25%;
-        top: 30%;
-        z-index: -10;
+      & .first-section-right img {
+        @include responsive.lg {
+          width: 250px;
+          height: 250px;
+        }
       }
     }
+  }
+  .container-test {
+    width: 100%;
   }
   & .second-section-wrapper {
     display: flex;
     flex-direction: column;
     & .second-section-left {
       background-image: url(./second-section-background.svg);
+      background-repeat: no-repeat;
       width: 100%;
       height: 320px;
       border-radius: 16px;
@@ -114,12 +113,19 @@ body {
       flex-direction: column;
       padding-left: 64px;
       padding-top: 100px;
+      @include responsive.lg {
+        margin-top: 80px;
+        padding-left: 30px;
+      }
       & h2 {
         font-family: "Inter";
         font-weight: 500;
         font-size: 40px;
         color: color.$color-black;
         margin-bottom: 10px;
+        @include responsive.lg {
+          font-size: 30px;
+        }
       }
     }
     & .second-section-p {
@@ -128,10 +134,20 @@ body {
       font-weight: 400;
       font-size: 20px;
       color: color.$color-black;
+      @include responsive.lg {
+        font-size: 17px;
+      }
     }
     & .second-section-right {
       display: flex;
       justify-content: space-evenly;
+      @include responsive.lg {
+      }
+      & .droplet {
+        @include responsive.lg {
+          display: none;
+        }
+      }
     }
   }
   & .third-section {
