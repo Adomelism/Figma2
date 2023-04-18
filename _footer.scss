@@ -26,6 +26,8 @@
       @include responsive.xxlg {
         margin-left: auto;
       }
+      @include responsive.lg {
+      }
     }
   }
   & .footer-right {
@@ -48,6 +50,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-content: center;
+      width: 50%;
     }
   }
   & .footer-right ul {
