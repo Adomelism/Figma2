@@ -407,6 +407,11 @@ body {
 .main-content .fourth-section {
   margin-top: 100px;
 }
+@media (max-width: 900px) {
+  .main-content .fourth-section {
+    margin-top: 50px;
+  }
+}
 .main-content .fourth-section .fourth-section-wrapper {
   display: flex;
 }
@@ -422,6 +427,12 @@ body {
   font-size: 20px;
   color: rgb(255, 255, 255);
   margin-bottom: 41px;
+}
+@media (max-width: 900px) {
+  .main-content .fourth-section .fourth-section-left p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
 }
 .main-content .fourth-section .fourth-section-left .button {
   border-radius: 100px;
@@ -443,10 +454,20 @@ body {
   text-transform: uppercase;
   color: #ff3998;
 }
+@media (max-width: 900px) {
+  .main-content .fourth-section .fourth-section-left .status {
+    font-size: 12px;
+  }
+}
 .main-content .fourth-section .fourth-section-right {
   width: 50%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 900px) {
+  .main-content .fourth-section .fourth-section-right img {
+    width: 150px;
+  }
 }
 .main-content .fourth-section h3 {
   font-family: "Inter";
@@ -455,6 +476,11 @@ body {
   color: rgb(255, 255, 255);
   margin-top: 15px;
   margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+  .main-content .fourth-section h3 {
+    font-size: 35px;
+  }
 }
 .main-content .fourth-section .straight-line {
   width: 100%;

@@ -278,6 +278,9 @@ body {
   }
   & .fourth-section {
     margin-top: 100px;
+    @include responsive.lg {
+      margin-top: 50px;
+    }
     & .fourth-section-wrapper {
       display: flex;
     }
@@ -292,6 +295,10 @@ body {
         font-size: 20px;
         color: color.$color-white;
         margin-bottom: 41px;
+        @include responsive.lg {
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
       }
       & .button {
         border-radius: 100px;
@@ -312,12 +319,20 @@ body {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: color.$color-pink;
+        @include responsive.lg {
+          font-size: 12px;
+        }
       }
     }
     & .fourth-section-right {
       width: 50%;
       display: flex;
       justify-content: center;
+    }
+    & .fourth-section-right img {
+      @include responsive.lg {
+        width: 150px;
+      }
     }
     & h3 {
       font-family: "Inter";
@@ -326,6 +341,9 @@ body {
       color: color.$color-white;
       margin-top: 15px;
       margin-bottom: 15px;
+      @include responsive.lg {
+        font-size: 35px;
+      }
     }
     & .straight-line {
       width: 100%;
