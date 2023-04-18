@@ -202,7 +202,7 @@ body {
 .main-content .second-section-wrapper .second-section-left {
   background-image: url(./second-section-background.svg);
   background-repeat: no-repeat;
-  width: 100%;
+  width: 1270px;
   height: 320px;
   border-radius: 16px;
   margin-top: 182px;
@@ -214,7 +214,7 @@ body {
 }
 @media (max-width: 900px) {
   .main-content .second-section-wrapper .second-section-left {
-    margin-top: 80px;
+    margin-top: 20px;
     padding-left: 30px;
   }
 }
@@ -244,20 +244,36 @@ body {
 }
 .main-content .second-section-wrapper .second-section-right {
   display: flex;
-  justify-content: space-evenly;
 }
 @media (max-width: 900px) {
   .main-content .second-section-wrapper .second-section-right {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .main-content .second-section-wrapper .second-section-right {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .second-section-wrapper .second-section-right {
+    flex-wrap: nowrap;
   }
 }
 .main-content .second-section-wrapper .second-section-right .second-section-right1 {
   display: flex;
   gap: 35px;
+  margin-right: 35px;
 }
 @media (max-width: 900px) {
   .main-content .second-section-wrapper .second-section-right .second-section-right1 {
     flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .second-section-wrapper .second-section-right .second-section-right1 img {
+    width: 130px;
   }
 }
 .main-content .second-section-wrapper .second-section-right .second-section-right2 {
@@ -267,6 +283,11 @@ body {
 @media (max-width: 900px) {
   .main-content .second-section-wrapper .second-section-right .second-section-right2 {
     flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .second-section-wrapper .second-section-right .second-section-right2 img {
+    width: 130px;
   }
 }
 @media (max-width: 900px) {
@@ -508,7 +529,7 @@ body {
   margin-right: 15px;
 }
 .main-footer .footer-left {
-  width: 50%;
+  width: 30%;
 }
 @media (max-width: 600px) {
   .main-footer .footer-left {

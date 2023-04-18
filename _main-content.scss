@@ -105,7 +105,7 @@ body {
     & .second-section-left {
       background-image: url(./second-section-background.svg);
       background-repeat: no-repeat;
-      width: 100%;
+      width: 1270px;
       height: 320px;
       border-radius: 16px;
       margin-top: 182px;
@@ -115,7 +115,7 @@ body {
       padding-left: 64px;
       padding-top: 100px;
       @include responsive.lg {
-        margin-top: 80px;
+        margin-top: 20px;
         padding-left: 30px;
       }
       & h2 {
@@ -141,15 +141,28 @@ body {
     }
     & .second-section-right {
       display: flex;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
       @include responsive.lg {
         flex-wrap: wrap;
+        justify-content: center;
+      }
+      @include responsive.sm {
+        flex-wrap: nowrap;
+      }
+      @include responsive.md {
+        flex-wrap: nowrap;
       }
       & .second-section-right1 {
         display: flex;
         gap: 35px;
+        margin-right: 35px;
         @include responsive.lg {
           flex-direction: column;
+        }
+      }
+      & .second-section-right1 img {
+        @include responsive.md {
+          width: 130px;
         }
       }
       & .second-section-right2 {
@@ -157,6 +170,11 @@ body {
         gap: 35px;
         @include responsive.lg {
           flex-direction: column;
+        }
+      }
+      & .second-section-right2 img {
+        @include responsive.md {
+          width: 130px;
         }
       }
       & .droplet {
