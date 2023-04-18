@@ -95,8 +95,9 @@ body {
       }
     }
   }
-  .container-test {
-    width: 100%;
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   & .second-section-wrapper {
     display: flex;
@@ -167,16 +168,25 @@ body {
   }
   & .third-section {
     margin-top: 100px;
+    @include responsive.lg {
+      margin-top: 40px;
+    }
     & h2 {
       font-family: "Inter";
       font-weight: 500;
       font-size: 40px;
+      @include responsive.lg {
+        font-size: 35px;
+      }
     }
     & p {
       color: color.$color-gray;
       font-family: "Inter";
       font-weight: 400;
       font-size: 20px;
+      @include responsive.lg {
+        font-size: 18px;
+      }
     }
     & .underlined {
       text-decoration: underline;
@@ -189,9 +199,15 @@ body {
         background-color: color.$color-black;
         width: calc(100% / 4);
         border-radius: 16px;
+        @include responsive.lg {
+          width: 100%;
+        }
       }
       & .card-logo img {
         width: 100%;
+        @include responsive.lg {
+          width: 250px;
+        }
       }
       & .card-content {
         display: flex;
@@ -219,6 +235,9 @@ body {
       text-transform: uppercase;
       color: color.$color-red;
       margin-bottom: 8px;
+      @include responsive.lg {
+        font-size: 10px;
+      }
     }
     & .bold-text {
       font-family: "Inter";
@@ -226,9 +245,15 @@ body {
       font-size: 19px;
       color: color.$color-white;
       margin-bottom: 8px;
+      @include responsive.lg {
+        font-size: 15px;
+      }
     }
     & .bold-text img {
       margin-right: 8px;
+      @include responsive.lg {
+        width: 10px;
+      }
     }
     & .gray-uppercase-text {
       font-family: "Inter";
@@ -237,12 +262,18 @@ body {
       text-transform: uppercase;
       color: color.$color-gray;
       margin-bottom: 8px;
+      @include responsive.lg {
+        font-size: 10px;
+      }
     }
     & .gray-text {
       font-family: "Inter";
       font-weight: 400;
       font-size: 18px;
       color: color.$color-gray;
+      @include responsive.lg {
+        font-size: 15px;
+      }
     }
   }
   & .fourth-section {

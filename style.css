@@ -191,8 +191,9 @@ body {
     height: 250px;
   }
 }
-.main-content .container-test {
-  width: 100%;
+.main-content .container {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .main-content .second-section-wrapper {
   display: flex;
@@ -276,16 +277,31 @@ body {
 .main-content .third-section {
   margin-top: 100px;
 }
+@media (max-width: 900px) {
+  .main-content .third-section {
+    margin-top: 40px;
+  }
+}
 .main-content .third-section h2 {
   font-family: "Inter";
   font-weight: 500;
   font-size: 40px;
+}
+@media (max-width: 900px) {
+  .main-content .third-section h2 {
+    font-size: 35px;
+  }
 }
 .main-content .third-section p {
   color: #777777;
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
+}
+@media (max-width: 900px) {
+  .main-content .third-section p {
+    font-size: 18px;
+  }
 }
 .main-content .third-section .underlined {
   text-decoration: underline;
@@ -300,8 +316,18 @@ body {
   width: 25%;
   border-radius: 16px;
 }
+@media (max-width: 900px) {
+  .main-content .third-section .third-section-right .card {
+    width: 100%;
+  }
+}
 .main-content .third-section .third-section-right .card-logo img {
   width: 100%;
+}
+@media (max-width: 900px) {
+  .main-content .third-section .third-section-right .card-logo img {
+    width: 250px;
+  }
 }
 .main-content .third-section .third-section-right .card-content {
   display: flex;
@@ -329,6 +355,11 @@ body {
   color: rgb(253, 150, 102);
   margin-bottom: 8px;
 }
+@media (max-width: 900px) {
+  .main-content .third-section .red-text {
+    font-size: 10px;
+  }
+}
 .main-content .third-section .bold-text {
   font-family: "Inter";
   font-weight: 500;
@@ -336,8 +367,18 @@ body {
   color: rgb(255, 255, 255);
   margin-bottom: 8px;
 }
+@media (max-width: 900px) {
+  .main-content .third-section .bold-text {
+    font-size: 15px;
+  }
+}
 .main-content .third-section .bold-text img {
   margin-right: 8px;
+}
+@media (max-width: 900px) {
+  .main-content .third-section .bold-text img {
+    width: 10px;
+  }
 }
 .main-content .third-section .gray-uppercase-text {
   font-family: "Inter";
@@ -347,11 +388,21 @@ body {
   color: #777777;
   margin-bottom: 8px;
 }
+@media (max-width: 900px) {
+  .main-content .third-section .gray-uppercase-text {
+    font-size: 10px;
+  }
+}
 .main-content .third-section .gray-text {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   color: #777777;
+}
+@media (max-width: 900px) {
+  .main-content .third-section .gray-text {
+    font-size: 15px;
+  }
 }
 .main-content .fourth-section {
   margin-top: 100px;
